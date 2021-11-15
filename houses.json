@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Condominium",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "20,000,00 USD",
+    "area": "south London",
+    "image": "https://imgdb.net/2988"
+  },
+  {
+    "id": 2,
+    "name": "Luxury House",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "50,000,00 USD",
+    "area": "south Australia",
+    "image": "https://imgdb.net/2978"
+  },
+  {
+    "id": 3,
+    "name": "Lovely Cottage",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "30,000,00 USD",
+    "area": "East London",
+    "image": "https://imgdb.net/2984"
+  },
+  {
+    "id": 4,
+    "name": "Beach House",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "20,000,00 USD",
+    "area": "south Sea",
+    "image": "https://imgdb.net/2983"
+  },
+  {
+    "id": 5,
+    "name": "Country House",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "20,000,00 USD",
+    "area": "south London",
+    "image": "https://imgdb.net/2978"
+  },
+  {
+    "id": 6,
+    "name": "Country Castle",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "90,000,00 USD",
+    "area": "Las Vegas",
+    "image": "https://imgdb.net/2982"
+  },
+  {
+    "id": 7,
+    "name": "Park House",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "20,000,00 USD",
+    "area": "South Park",
+    "image": "https://imgdb.net/2981"
+  },
+  {
+    "id": 8,
+    "name": "Chataeu",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "20,000,00 USD",
+    "area": "East London",
+    "image": "https://imgdb.net/2980"
+  },
+  {
+    "id": 9,
+    "name": "Lonely House",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "20,000,00 USD",
+    "area": "south London",
+    "image": "https://imgdb.net/2979"
+  },
+  {
+    "id": 10,
+    "name": "Country House",
+    "description": "Perfect for enjoying all your favorite activities, sports, and hobbies, this remarkable property is also set up to accommodate a variety of equestrian disciplines. There are multiple residences for welcoming family and friends and to have on-site staff, trainers, and managers. Strategically developed to achieve the ultimate in privacy yet conveniently located just minutes to downtown, airports, shopping, beaches, and showgrounds, this special haven is unlike any other in the area. ",
+    "price": "10,000,00 USD",
+    "area": "South Africa",
+    "image": "https://imgdb.net/2977"
+  }
+]
