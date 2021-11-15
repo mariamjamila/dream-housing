@@ -22,6 +22,7 @@ async function run() {
     const houseCollection = database.collection("homes");
     const usersCollection= database.collection('users');
     const orderCollection = database.collection('orders');
+    const reviewsCollection = database.collection('reviews');
     app.get("/houses", async (req, res) => {
     
       const cursor = houseCollection.find({});
@@ -83,8 +84,19 @@ async function run() {
        const result = await usersCollection.updateOne(filter, updateDoc) 
         res.json(result)
         
-    })
+    });
+    app.post('/addReview', async (req, res) => {
+ 
+      const cursor = await reviewsCollection.insertOne(req.body);
+      res.json(result);
+    });
+    app.get('/reviews', async (req, res) => {
+      const cursor = await reviewsCollection.find({});
+      const reviews = await cursor.toArray([]);
 
+      res.json(reviews);
+
+    });
     app.put('/users/admin', async(req,res)=>{
       const user = req.body;
     
