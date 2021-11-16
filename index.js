@@ -47,20 +47,57 @@ async function run() {
     });
     app.post('/purchase/:id', async(req,res)=>{
       const user = req.body;
-      const result = await orderCollection.insertOne(user)
+      const houseid = req.params.id;
+      const orderData = {...user, houseid: houseid};
+      const result = await orderCollection.insertOne(orderData);
+
       res.json(result)
+    })
+    app.post('/addProduct', async(req, res)=>{
+      const product = req.body;
+      const result = await houseCollection.insertOne(product);
+      res.send(result);
     })
     app.post('/myOrder',async(req, res)=>{
       const user = req.body.user;
-      console.log(user);
-      const cursor = await orderCollection.find({email : user})
-      const result = await cursor.toArray([]);
 
-      const house = await houseCollection.findOne({_id: ObjectId(result._id)})
-      console.log(house);
-      console.log('hello world')
-      console.log(result)
-      res.json(result);
+      const cursor = await orderCollection.find({email : user})
+      const orders = await cursor.toArray([]);
+
+      const response = [];
+      
+      for(order of orders){
+        const house = await houseCollection.findOne({_id: ObjectId(order.houseid)});
+        const orderObj = {...order, house: house};
+        response.push(orderObj);
+      }
+    
+        
+        
+
+      console.log(response)
+      res.json(response);
+        
+    });
+    app.get('/allOrders',async(req, res)=>{
+      const user = req.body.user;
+
+      const cursor = await orderCollection.find({})
+      const orders = await cursor.toArray([]);
+
+      const response = [];
+      
+      for(order of orders){
+        const house = await houseCollection.findOne({_id: ObjectId(order.houseid)});
+        const orderObj = {...order, house: house};
+        response.push(orderObj);
+      }
+    
+        
+        
+
+      console.log(response)
+      res.json(response);
         
     })
     app.get('/users/:email', async(req, res)=>{
@@ -104,6 +141,18 @@ async function run() {
       const updateDoc = {$set:{role:'admin'}}
       const result = await usersCollection.updateOne(filter, updateDoc)
       res.json(result)
+    });
+    app.delete('/myOrder/:id', async(req,res)=>{
+      const orderid = req.params.id;
+      const response = await orderCollection.deleteOne({_id: ObjectId(orderid)});
+      res.json(response);
+
+    });
+    app.delete('/manageProducts/:id', async(req,res)=>{
+      const houseid = req.params.id;
+      const response = await houseCollection.deleteOne({_id: ObjectId(houseid)});
+      res.json(response);
+
     });
   } finally {
 
