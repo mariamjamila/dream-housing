@@ -48,11 +48,22 @@ async function run() {
     app.post('/purchase/:id', async(req,res)=>{
       const user = req.body;
       const houseid = req.params.id;
-      const orderData = {...user, houseid: houseid};
+      const orderData = {...user, approved:false, houseid: houseid};
       const result = await orderCollection.insertOne(orderData);
 
       res.json(result)
     })
+    app.put('/purchase/:id', async(req,res)=>{
+      const houseid = req.params.id;
+      const updateDoc = {
+        $set:{
+          approved: true
+        }
+      }
+      const result = await usersCollection.updateOne({_id: ObjectId(req.params.id)}, updateDoc);
+
+      res.json(result);
+    });
     app.post('/addProduct', async(req, res)=>{
       const product = req.body;
       const result = await houseCollection.insertOne(product);
