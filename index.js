@@ -60,7 +60,7 @@ async function run() {
           approved: true
         }
       }
-      const result = await usersCollection.updateOne({_id: ObjectId(req.params.id)}, updateDoc);
+      const result = await houseCollection.updateOne({_id: ObjectId(req.params.id)}, updateDoc);
 
       res.json(result);
     });
